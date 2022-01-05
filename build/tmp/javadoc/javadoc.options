@@ -1,0 +1,10 @@
+-classpath 'D:\\2CS\\OGL\\TP5\\TP\\build\\classes\\java\\main;D:\\2CS\\OGL\\TP5\\TP\\build\\resources\\main'
+-d 'D:\\2CS\\OGL\\TP5\\TP\\build\\docs\\javadoc'
+-doctitle 'TP_Gradle 1.0-SNAPSHOT API'
+-notimestamp 
+-quiet 
+-windowtitle 'TP_Gradle 1.0-SNAPSHOT API'
+'D:\\2CS\\OGL\\TP5\\TP\\src\\main\\java\\com\\example\\exception\\NoSquareException.java'
+'D:\\2CS\\OGL\\TP5\\TP\\src\\main\\java\\com\\example\\Main.java'
+'D:\\2CS\\OGL\\TP5\\TP\\src\\main\\java\\com\\example\\model\\Matrix.java'
+'D:\\2CS\\OGL\\TP5\\TP\\src\\main\\java\\com\\example\\service\\MatrixMathematics.java'

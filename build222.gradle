@@ -1,0 +1,34 @@
+task generateMatrixAPI{
+    doLast {
+        println 'DONE !'
+    }
+}
+
+task ensureDirectory{
+    doLast {
+        println "Create MatrixRelease/Matrix_v_1.0 Directory "
+        mkdir "MatrixRelease/Matrix_v_1.0"
+    }
+}
+
+task copyReports (type: Copy){
+    println "Copying Reports directory ..."
+    from "build/reports"
+    into "MatrixRelease/Matrix_v_1.0"
+}
+
+task copyDocs (type: Copy){
+    println "Copying Docs directory ..."
+    from "build/docs"
+    into "MatrixRelease/Matrix_v_1.0"
+}
+
+task copyLibs (type: Copy){
+    println "Copying Libs directory ..."
+    from "build/libs"
+    into "MatrixRelease/Matrix_v_1.0"
+}
+
+generateMatrixAPI.dependsOn ensureDirectory,build,javadoc
+ensureDirectory.mustRunAfter build,javadoc
+ensureDirectory.dependsOn copyLibs,copyDocs,copyReports
